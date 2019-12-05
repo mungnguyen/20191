@@ -1,0 +1,74 @@
+- Nền tảng mở: cài plugin
+- Thiểu tính đồng nhất
+- Monolicthic:
+	+ Kiến trúc phía server
+	+ 1 team : 1 prj
+	+ đóng gói 1 file
+	+ dễ develop, impliment
+	+ scale:
+		- dọc: tăng cấu hình phần cứng
+		- ngang: tăng số lượng máy chủ
+	+ phù hợp: dự án nội bộ, yêu cầu cực kì cực kì rõ ràng, đầy đủ; dự án nhỏ, ngắn hạn
+	+ vấn đề: .....
+-----------------------------------------------------------------------------------------------------------------------------------------------
+- Microservice:
+	+ tách thành các service độc lập: có các DB độc lập, nhiều công nghệ khác nhau
+	- ưu điểm: 
+		+ phân tách hệ thống thành các service nhỏ phục vụ 1 mục đích duy nhất
+		+ prj nhỏ => chạy nhanh
+		+ mỗi service chạy trên 1 instance => nhanh
+		+ deploy độc lập
+		+ ko phụ thuộc nền tảng công nghệ
+		+ scale linh hoạt: function, team
+- API Gateway: cổng chung, lưu các địa chỉ IP
+- Config Server: lưu cấu hình hệ thống
+- Eureka Server: giúp các service biết sự tồn tại của nhau
+- OAuth Server: xác thực và phân quyền
+- Fault Tolerance: khả năng chống chịu lỗi
+- Certert breakter: cơ chế đoản mạch
+------------------------------------------------------------------------------------------------------------------------------------------------
+Domain Driven Design
+- Yêu cầu hệ thống vận hành ở 1 ngưỡng ổn định, 
+- Vấn đề:
+	+ ngôn ngữ ko thống nhất giữa analysis và code
+	+ smell code
+- Patterns:
+	+ Stategic: chắt lọc vde, định hình kiến trúc
+	+ Tactical: cách thức tạo ra các model
+- Sub domain:
++ core: cần có
++ supporting: hỗ trợ
++ generic: chung
+
+- Bounded context: Các tiêu chí phân chia:
+	+ theo subdomain / business
+	+ team
+	+ legacy code: áp dụng chuyển từ mono => micro, coi cả legacy code (code huyền thoại) = bounded context => tách dần dần
+	+ third party:
+- Mục đích:
++ high availible
+- Mối quan hệ:
+- Context mapping:
+	+ anticorruption layer
+	+ share kernel: các business chung: hai contex cùng chia sẻ 1 context
+( data: lưu trữ thông tin, business: application )
+	+ open host service: expose API
+	+ upstream / downstream: message queue
+
+- Tương tác giữa các Bc:
+	+ message:
+		+ message bus
+		+ Vấn đề:
+			- Reliable message:
+				+ At least once: message xử lý tối thiểu 1 lần
+				+ At most once: vấn đề de-duplicate message
+				+ Exacty once: 
+				// xử lý message n lần ko ảnh hưởng kết quả
+			- Eventualy Consistency: // đảm bảo hành động thành công, 
+	+ http:
+
+- Application architecture:
++ business luôn đóng gói ở giữa, sửa business sẽ ảnh hưởng đến tất cả các tp xung quanh
++ presentance: lưu trữ thông tin
++ process manager: 
+

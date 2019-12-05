@@ -1,0 +1,15 @@
+(*) Thẻ/ vé:
+- đã vào => ko đc vào
+- chưa vào => ko đc ra
+
+(*) Giả lập mã vạch:
+- Người dùng gõ một mã 8 chữ cái (psudo barcode)
+- Nhiệm vụ của máy quét sẽ chuyển từ barcode sang ticket/card code (16 bits) (ko phải ticket id)
+- ticket/ card id là 14 kí tự tự tăng, trong đó 2 kí tự đầu là loại vé, 8 kí tự tiếp là năm tháng ngày, 4 kí tự cuối là tự tăng
+- một ticket/card code <=> 1 ticket/card id
+- Cần có cơ chế để chuyển đổi giữa ticket/card id và ticket/card code
+=> Thiết kế DB:
++ ticket id
++ ticket code (unique)
+
+

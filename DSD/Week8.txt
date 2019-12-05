@@ -1,0 +1,25 @@
+(*) BTVN:
+- Vẽ lại kiến trúc toàn bộ hệ thống
+- Chỉ ra các điểm mà các mối quan hệ giữa các service mà các nhóm đã thiết kế và chỉ ra
+  Đề xuất giải pháp cho các điểm bất hợp lý nêu trên
+- Đặc tả kịch bản sử dụng phối hợp giữa các API từ các dịch vụ liên quan giữa các nhóm 
+=> check lại với giao diện: 2 phần
+	+ đề xuất phần nhóm giao diện tích hợp quy trình
+	+ phần nhóm tự xây dựng giao diện
+
+=> submit 3 bài riêng biệt trên hệ thống, có review của các nhóm khác
+
+- Yêu cầu: có 3 quy trình minh họa sd dịch vụ của nhóm mình và các APIs liên quan
+
+
+(*) BT:
+- Chọn 1 dịch vụ gọi đến 3 - 5 dịch vụ khác, demo bằng code để thể hiện 4 mô hình đã nêu
+
+(*) Note:
+- Đồng bộ ng dùng: sao chép thao tác, hạn chế việc sao lưu DL khắp nơi
+- Sao chép DL: lấy DL nào trung tâm
+
+(*) Câu hỏi bonus:
+1. Ứng dụng hay dịch vụ nào nhất quán theo dữ liệu, ứng dụng hay dịch vụ nào nào nhất quán theo người dùng?
+2. Giải quyết như thế nào để đảm báo quyền lợi của ng dùng khi chọn những chiến lược nhất quán khác nhau?
+3. Ai, cài gì sẽ làm gì đảm bảo quyền lợi của người dùng? Đảm bảo quyền lợi như thế nào?

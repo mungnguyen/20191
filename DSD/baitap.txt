@@ -1,0 +1,21 @@
+1. Cac nhom check chéo:
+1 nhóm ktra 5 nhóm, mỗi 1 ng ktra 1 nhóm. (số lượng các nhóm ktra bằng số lượng thành viên)
+- Người trong nhóm j ktra nhóm j+2, j+4, j+6, j+8, j+10
+- Nhóm ít hơn 5 người tự động trừ đi
+W10: nộp kq, W10-thực hiện: DSSV, làm =:> điền tên vào cột định danh
+- Nhận xét asset point
+- Nhận xét số lượng api/ ui đã thực hiện, thông điệp đầu vào, thông điệp đầu ra, số lượng giải thuật hoặc các nghiệp vụ đã cài đặt
+B-C: chọn cái này thì thôi cái kia
+Kịch bản kết nối: 
+	1. Giám đốc đặt KPI cho toàn cty, các bộ phận đặt KPI của bộ phận mình theo KPI của giảm đốc, nhân viên đặt KPI của mình theo KPI bộ phận cho từng công việc (có quy trình và ko có quy trình)
+	2. Quản trị hệ thống thiết lập quy trình sx ra sản phẩm mới: từ nghiên cứu sp mới, sản xuất ra sp, đưa ra thị trường, bán hàng, tổng kết, thống kê các khía cạnh về chi phí, lợi nhuận, hiệu quả thực hiện, cũng như các vấn đề phát sinh trong quá trình thực hiện từng công việc
+	3. Theo dõi thi đua, năng suất, chất lượng hiệu quả cv giữa các cá nhân trong từng phòng ban, giữa các phòng ban và thống kê, báo cáo chung cho toàn công ty, những người có vị trí công việc khác nhau sẽ nhìn thấy các thông tin khác nhau
+
+Xác định: api thiếu hay đủ, 1workflow - 1 kịch bản
+- Mình thuộc nhóm nào?
+- Api nào sẽ phục vị cho nhóm đó?
+- workflow Đảm bảo 3 thao tác:
+	+ dl vào ra  
+	+ tại td nào gọi api
+	+ api thực hiện trc hay sau api nào
+làm dưới dạng code, báo cáo trong 1 trang a4

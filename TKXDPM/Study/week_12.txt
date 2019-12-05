@@ -1,0 +1,64 @@
+------------------------------------------------------------DESIGN PATTERNTS-------------------------------------------------------------------
+(*) Static structure và dynamic behavior của 1 PM:
+- Static: xem đc có những thành phần PM gì, vai trò và mqh giữa chúng
+VD: biểu đồ lớp, biểu đồ UC
+- Dynamic: cách các thành phần tương tác với nhau dựa trên static structure
+VD: biểu đồ trình tự, biểu tồ giao tiếp, biểu đồ hoạt động, biểu đồ máy trạng thái
+
+=> Design pattern đưa ra cả phần tĩnh và động:
+- Tĩnh: KT cho mã nguồn linh động hơn
+
+===============================
+=== Book1: The Gang of Four ===
+===============================
+
+1. Singleton
+- Sử dụng khi: 
+	+cần tiết kiệm tài nguyên, tăng hiệu năng: chỉ cần 1 instance là đủ
+		VD: connect DB
+	+ yêu cầu về nghiệp vụ: chương trình chỉ cần 1 thể hiện duy nhất
+- Làm thế nào để đảm bảo chỉ có duy nhất 1 instance: 
+	+ private static attribute
+	+ private contructor
+	+ tạo phương thức public static, kq trả về là instance của lớp: sd static để bên ngoài có thể gọi qua tên lớp:
+		- check instance chưa đc khởi tạo 
+		=> khởi tạo instance => return
+- VD: RandomNumber: nếu có nhiều bộ sinh ngẫu nhiên có thể gây ra kq ko khách quan,
+      one Restaurant, one ShoppingCard
+      KeyboardReader: lấy standard input, chỉ có duy nhất 1 bàn phím, nên cần lấy bàn phím hiện thời
+      Logger: ghi 1 nơi, cần 1 bộ log duy nhất
+- ko sd bừa bãi vì dễ làm chương trình mất linh hoạt
+
+2. Phân loại: 23 mẫu chia làm 3 loại:
+- Creational Patterns
+- Structural Patterns
+- Behavioral Patterns
+
+3. Adapter Pattern
+- Ý tưởng: khi cần kết nối 2 thư viện hoặc 1 thư viện và 1 interface mà tv ko làm việc đc vs thư viện, giải quyết sd 1 Adapter: vd, sử dụng cổng chuyển đổi.
+- Sd khi chúng ta ko muốn sửa hoặc ko được sửa đc mã nguồn hoặc sửa sẽ ảnh hưởng đến các giao tiếp khác.
+- Làm thế nào để sử dụng:
+	+ Adapter object: kế thừa 1 class và sử dụng 1 class
+	+ Adpater class: kế thừa cả 2 class, sử dụng khi cả 2 là interface, hoặc 1 là interface, 1 là lớp (trong trường hợp chỉ cho phép đơn 		kế thừa)
+
+4. Facade
+- Ý tưởng: nếu kết nối trực tiếp, lớp bên ngoiaf cần biết cấu trúc bên trong subsystem, khi bên trong thay đổi làm ảnh hưởng đến bên ngoài
+- Làm thế nào để thực hiện:
+	+ Facade: giao diện để bên ngoài giao tiếp với bên trong, facade sẽ điều phối công việc vs các thành viên bên trong để thực hiện yêu 		cầu => giúp che dấu cấu trúc bên trong với bên ngoài
+- VD: Complier
+
+5. Composite: gần giống đệ quy
+
+6. Iterator
+- Mục đích: duyệt qua các phần tử, công việc có thể lặp lại
+
+7.Stragegy:
+- So sánh stategy vs subclass: 
+VD: cần tạo ra ít nhất 6 class để handle 2 function (3 cách thực hiện function1 và 2 cách thực hiện function 2) => qua nhiều lớp con => bùng nổ số lượng lớp
+Stragegy sẽ giúp cố định số cách thực hiện theo cấp số cộng
+
+8. Obsever
+
+9. Factory
+
+=========================================================== patterns trên học kĩ, có thể thi ==================================================

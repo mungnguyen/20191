@@ -1,0 +1,28 @@
+Review-20191
+1. Phân công các thành viên:
+	- SRS
+	- AD
+	- DD
+2. Review cho SRS
+3. Review cho AD
+4. Review cho DD
+
+(*) Cần bổ sung:
+- Phương thức để người dùng nhập barcode
+- Phương thức đọc file và lưu vào DB
+- Kiểm tra vé vào / ra
+- Đặc tả chi tiết lớp
+- Đặc tả DB
+
+(*) Flow event
+- Các bên tham gia: các actor - hệ thống
+- Hệ thống: hộp đen
+- Tránh những gì liên quan đến thiết kế, ko đề cập đến các giải pháp bên trong
+	V
+
+(*) Sequence diagram
+- cần đưa ra giải pháp cụ thể
+ VD: checkin (b) => checkin (c) => kiểm tra vé có hợp lệ ko (c) => lấy thông tin vé (e) => kiểm tra vé đã dùng chưa (c)
+nhà ga có hợp lệ ko (c) => lấy thông tin nhà ga (e)...
+=> lưu thông tin (c) 
+

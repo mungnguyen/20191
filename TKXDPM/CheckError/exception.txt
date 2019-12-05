@@ -1,0 +1,8 @@
+1. Class: OnewayTicketController
+   Function: checkIn
+   	- ticket.getOneWayTicket() => NullException
+	- oneWayTicket.getStartPoint => NullException
+	- oneWayTicket.getEndPoint => NullException
+	- entry.getDistance() => NullException
+	- startEntry.getDistance() => NullException
+	- endEntry.getDistance() => NullException

@@ -1,0 +1,94 @@
+(*) Phần mềm chat: Các tính năng đặc biệt: boomchat
+- *Nhắc nhở, tự động gọi, sd thông qua đt, tin nhắn
+- Gợi ý điểm gặp mặt
+- tích hợp nghe nhạc, xem phim, audio chung
+- Gợi ý (hơi khó)
+- Ghim tin nhắn
+- Chọn ngôn ngữ ngầm định
+
+THƯƠNG MẠI HÓA
+	VD: phục vụ doanh nghiệp
+	- Tích hợp messenger để chăm sóc khách hàng:
+
+	Nâng cao hơn: 
+	- Điều hành đội ngũ chăm sóc khách hàng
+	- Điều hành việc chat
+	- Kết hợp âm thanh, hình ảnh, livestream
+
+(*) Có nên gộp nhập - xuất hay ko?
+- Có nhiều báo cáo liên quan cả 2 bảng
+- Hóa đơn nhập và xuất ko có quan hệ với nhau thì phải nối lại dùng union, ko khéo sẽ sập:
+	+ vd lỗi timeout trong sql server: do ko tối ưu 
+	+ vd: tìm số hóa đơn lớn nhất + 1, nếu lấy cả DB theo thứ tự ngc thì chậm, nhưng ở đây có 2 loại hóa đơn (vd khách sạn Hòa Bình):
+		- Hóa đơn do máy tự làm
+		- Hóa đơn viết tay
+	+ Mã hóa đơn liên tục, ko đc ngắt quãng
+	+ union 2 bảng có trường giống nhau thì ít bị timeout, còn nếu khác nhau dù chỉ 1 chút thì rất có thể timeout
+- Mã hóa đơn thu chi cần liên tục - ko đc ngắt quãng
+- Nếu gộp lại thì phải đếm mã hóa đơn
+
+(*) Quy trình bán hàng thông thường trong thực tế
+- Khách tìm kiếm sp => thêm vào giỏ => Đặt hàng
+- Hệ thống kiểm tra đăng nhập:
+	+ Chưa đăng nhập => đăng nhập, đăng kí
+	+ Kiểm tra thông tin => Cho phép thay đổi địa chỉ, số điện thoại nhận hàng
+	+ Gửi đi => đơn: trạng thái đặt hàng
+	+ CH: qly lọc trạng thái đặt hàng => kiểm tra => gọi điện, email, có thể yêu cầu bổ sung thông tin: ngày giờ, địa chỉ,... 
+	=> đơn: confirm => phân công giao hàng => ds shipper/ phân công tự động/ điều chỉnh phân công
+	+ ngày giao hàng: trc 1 ktg, hệ thống báo shipper đến kho nhận hàng
+	+ thủ kho giao hàng cho shiiper: chọn shipper, chọn đơn hàng => giao hàng => đơn: giao hàng
+	+ trách nhiệm mang $ về: shiiper
+	+ tình huống có thể xảy ra khi giao hàng
+		- đổi sp: 
+		- trả sp: 
+	+ nộp tiền cho 1 / nhiều đơn hàng cho quản lý (chức năng thu tiền của shipper) => đơn: đã hoàn thành
+
+(*) Quản lý: 
+- Quản lý sp
+- Quản lý phân công
+- Quản lý người dùng:
+	+ Admin: 
+	+ Quản lý
+	+ Kho
+- Quản lý kho
+- Shipper: thụ động, có thể có chức năng từ chối đơn hàng
+
+(*) Mặt hàng xe máy - ô tô:
+- Liên quan đến xeri, số khung, số máy: nhập cả lô, xuất từng cái: số lượng, chi tiết số khung số máy cụ thể
+	+ Khi xuất, xuất của đợt nhập nào
+	+ Khi bán là bán của lô nào, bán đúng giá đó
+
+(*) Luyện thi Toeic online:
+- Các app hiện có: người học phải hoàn toàn chủ động: học cũng đc, ko học cũng ksao. GIẢI PHÁP:
+	+ Bản thân ctr là 1 tác nhân để kích thích thu hút ng học:
+		- Phải tự động đánh giá kq của người học: đky lịch học hàng tuần: học trong bao lâu, đến bh phải hoàn thành
+		=> tự động phân công lịch học
+		=> dựa theo kq học => cuối giai đoạn đánh giá => hệ thống nhắc nhở những chỗ còn hổng
+		- Gặp từ mới => tra từ điển
+		- Luyện nghe/ text to speech: nói => so sánh nói đã chuẩn hay chưa/ nói ghi âm lại => chấm điểm
+		- Nghe: nghe 1 đoạn => gõ lại/ nói lại
+
+(*) Quản lý nhà hàng:
+- Các sơ đồ bàn, các khu
+- Phân công nhân viên: quản lý khu nào? những ai phụ trách khu nào?
+- Bàn: màu sắc => có khách hay ko có khách
+chức năng cho khách vào bàn
+khách đặt bàn/ order => menu hiện ra
+=> chuyển ra bếp => bếp xong báo lại
+=> bên ngoài biết đc cần chuyển món ăn đến cho khách
+Trước khi thanh toán: trả lại hàng: vd bia 1 két, uống 1/2 thu tiền 1/2
+- Thanh toán: 
++ Lấy hóa đơn
++ Ko lấy hóa đơn
+=> ĐEm tiền đi nộp
+- Gộp thông tin để làm thức ăn 1 lần, ko làm theo từng suất từng suất một
+
+(*) Thiết bị âm thanh: tương tự laptop
+
+(*) Quản lý sự kiện:
+- Người điều hành sự kiện
+- Chuẩn bị phòng ốc, âm thanh ánh sáng, MC, sân khấu
+- Các loại sk khác nhau cần làm những gì, quy trình khác nhau ra sao, theo dõi tiến độ ntn
+- Cần cbi gì? Ai làm gì? Làm đến đâu. Cần quan sát đc tiến trình, đánh giá kết quả, đánh giá cv đã hoàn thành và cv còn thiếu
+
+(*) 

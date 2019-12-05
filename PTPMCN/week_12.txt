@@ -1,0 +1,60 @@
+--------------------------------------------------------MÔ HÌNH PHÁT TRIỂN SẢN PHẨM-----------------------------------------------------------
+1. Mô hình phát triển sp chung
+Tiếp nhận yêu cầu => xác định phạm vi sp => kiểm duyệt => Thiết kế tổng thể => Thiết kế CSDL => thiết kế giao diện người dùng => kiểm duyệt => test => pt => vẽ giao diện ng dùng => xd sp : tại bc này đi theo mô hình phát triển linh hoạt
+
+======> mô hình lai
+
+2. Vòng đời dự án PTPM sản phẩm mới hoàn toàn
+- Sp mới: vẫn dùng vòng lặp, nh cơ bản là sd các pp truyền thống
+
+3. Sp nâng cấp, bảo trì, chỉnh sửa
+- ko còn bc định hình
+- chuyển hẳn sang vòng lặp xây dựng
+
+===============================================================================================================================================
+Mô hình linh hoạt bản chất là mô hình vòng lặp, khác là chia nhỏ sp ra thành từng cv nhỏ để có đc sp sớm => nhận feedback sớm => có vấn đề có thể sửa đổi
+===============================================================================================================================================
+
+
+-----------------------------------------------------PHÁT TRIỂN PHẦN MỀM - CÁC VẤN ĐỀ VÀ GIẢI PHÁP--------------------------------------------
+2. Phân tích tình hình phát triển phần mềm
+- KT thế giới càng ngày càng phụ thược vào PM
+- Các ud ngày càng lớn, phức tạp
+- đội ngũ phát triển PM cũng phát triển mạnh, cạnh tranh => đòi hỏi nâng cao năng suất, chất lượng
+- Nguồn nhân lực tăng nhanh nhưng ko đủ, đb nhân lực có trình độ cao
+
+3. Chúng ta đã làm việc ra sao?
+Các triệu chứng:
+- Không hiểu được những gì người dùng cần: có chuyên môn về tin học nh lại ko có nghiệp vụ. PM thì ứng dụng trong mọi lĩnh vực của cuộc sống. 
+- Không thích ứng đc với các yêu cầu của hệ thống
+- Các modole không khớp nhau
+- PM khó bảo trì, kkhos nâng cấp, khó mở rộng
+- Phát hiện trễ các lỗ hổng, chi phí khi có sự cố xảy ra lớn
+- Chất lượng PM kém, hiệu năng thấp
+- Các tv kb ai đã làm gì, thay đổi khi nào, ở đâu, tại sao thay đổi
+- Quá trình build-and-release không đáng tin cậy
+
+4. Chữa trị các triệu chứng không giải quyết vấn đề
+(*) Nguyên nhân:
+- Quản lý yêu cầu người dùng không đầy đủ
+- Trao đổi thông tin mơ hồ, ko đầy đủ
+- Kiến trúc không vững chắc
+- Độ phức tạp quá tầm kiểm soát
+- Mâu thuẫn giữa yêu cầu, thiết kế, cài đặt ko đc phát hiện
+....
+ (*) Giải pháp:
+- Phát triển theo vòng lặp
+
+...
+
+(*) Giải quyết các nguyên nhân giúp giảm các triệu chứng:
+- một triệu chứng xuất phát từ nhiều nguyên nhân, một nguyên nhân có thể cần nhiều giải pháp để giải quyết
+
+(*) Các kinh nghiệm quý của CNPM:
+
+(*) Các kinh nghiệm:
+
+- Phát triển PM theo vòng lặp:
+	+ thiết kế ban đầu có thể ko hoàn chỉnh
+	+ phát hiện trễ thiếu sót => tăng giá thành, tốn thời gian, thậm chí hủy bỏ dự án
+

@@ -1,0 +1,17 @@
+CHƯƠNG 1: PHÁT TRIỂN PHẦN MỀM
+
+I. Khái niệm
+- PTPM là 1 quá trình lấy yc người dùng, pt, thiết kế và thực hiện các giải pháp
+- So vs lt:
++ Lập trình là phần thực hiện, hoặc thiết kế và thực hiện trong PTPM
++ Là cốt lõi nhưng ko phải tất cả
+
+
+
+
+
+
+
+
+
+

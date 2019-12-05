@@ -1,0 +1,109 @@
+(*) Nhận xét:
+- Nội dung
+- Kết xuất nội dung 
+- Điều hướng
+- Hỗ trợ tương tác
+Và:
+- Chỉ ra các vi phạm theo nguyên tắc thiết kế: Normal,...
+=> Cách thức xử lý ntn
+
+==========================================================================================================
+3 vấn đề:
+- Vấn đề quy trình
+- Vấn đề đánh giá KPI
+- Vấn đề kết hợp các bộ phận
+=== Mục tiêu: quan lý cv đc thực hiện bởi nv theo 1 quy trình nhất định, trong 1 thời gian nhất định, theo các lưới tiêu chí nhất định 
+coi nghiệp vụ là 1 cv và thực hiện cv ấy
+
+1 - (*) Nguyên tắc thiết kế: giao diện dành cho từng đối tượng
+2 - (*) Xác định bố cục
+3 - (*) Điều hướng:
++ điều hướng bên trong: lưới, qh phân cấp => luồng duyệt tin: button, form, nội dung cố định: Cấu trúc khung
+	+ tỉ lệ màn hình như thế nào cho hợp lý
++ điều hướng giữa các màn hình: cách điều hướng giữa các màn hình:
+	+ Phần của mình gắn vs các phầ khác ở đâu, ntn, quy luật ra làm sao?
+		+ giữa các màn hình vs nhau: của mình và của các nhóm khác
+		+ Cần có liên kết để xác định nguồn đó là 
+4 - (*) Hỗ trợ lỗitương tác:
+	+ Trợ giúp: video demo, (làm giúp ng dùng), cảnh báo, sugesstion, auto fill, tự động loại bỏ giá trị lỗi
+	+ Chỉ dẫn: file hướng dẫn, nhìn và làm, thông báo lỗi, notification, process bar
+==========================================================================================================
+(*) Nhóm 3:
+- Màu button và chữ không đối lập => khó nhìn
+
+===================
+(*) Nhóm 7: Xưởng sản xuất thuốc bột thú y
+- Chức năng: kế hoạch sản xuất, báo cáo thống kê, thông báo
+- Kết xuất nd: Kế hoạch có các nhóm công việc, có thể tạo cv, phân công sx, tách công việc, các coong việc tông đọng
+Báo cáo: được phân loại, màu sắc hài hòa, dễ nhìn
+- Điều hướng: điều hướng rõ ràng
+- Hỗ trợ tương tác: cho phép kéo thả
+
+Các vi phạm: 
+- Giao diện chưa đồng nhất => chỉnh sửa lại màu, chọn xanh lục hoặc lam đồng nhất từ đầu đến cuối
+==================
+(*) Nhóm 6:
+- Nội dung: Phân công công việc, Kiểm tra quy trình sản xuất thuốc, bố cục chưa rõ ràng
+- Kết xuất nội dung:
++ phân chia công việc theo nhóm, theo bộ phận
++ Giao diện chi tiết
++ có demo
+- Điều hướng: Điều hướng tốt
+- Hỗ trợ tương tác:
++ Giao diện chưa thể hiện được đặc tính công việc
+Các vi phạm:
+- Hai mô hình tạo công việc khác nhau nhiều trong cùng một nhóm giao diện => cần chỉnh lại cho khớp
+========================
+Nhóm:
+- Nội dung:Quản lý công việc, tính KPI, quản lý thông tin thi đua, khen thưởng
+- Kết xuất nội dung:
+- Điều hướng:
+- Hỗ trợ tương tác:
+==================
+Nhóm Q.Huy:
+- Nội dung: 
+- Kết xuất: chữ nhỏ, khó nhìn, bố cục chưa ổn
+- Điều hướng:
+điều hướng chưa tốt
+- Hỗ trợ tương tác: 
+==============
+Nhóm Toàn:
+- Nội dung: 
+- Kết xuất: Menu dọc, header, nội dung
+- Điều hướng:
+	+ đăng nhập => trang chủ
+	+ Thống kê => lựa chọn thống kê thao ngày
+	+ Tìm kiếm: nhập ngày, chọn ngày
+- Hỗ trợ tương tác: 
+===========
+Nhóm ko quen:
+- Nội dung: sx thuốc thú ý quản đốc, nhân viên
++ NV: báo cáo số lượng thuốc theo loại động vật, báo cáo công việc theo chu kì
++ Quản đốc: giao việc, theo dõi công việc
+- Kết xuất: có thông báo cho người dùng, xuất file
++ thêm công việc nên sử dụng dialog
++ có thể quản lý nhân viên
+- Điều hướng: điều hướng rõ ràng, có thông báo cho người dùng
+- Hỗ trợ tương tác:
+===========
+Nhóm Kim Anh:
+- Nội dung: quản lý KH, tạo chương trình khuyến mãi, nội dung đầy đủ
+- Kết xuất: chữ hơi bé, nhân viên ko nên nhìn thấy tất cả về các KPI
+- Điều hướng:
++ KPI lấy từ các nguồn tự động và nguồn cho người dùng nhập vào
++ Cần có liên kết để KPI để xác định nguồn đó là 
+đúng
+- Hỗ trợ tương tác:
+============
+Nhóm ko quen:
+
+
+
+============
+Nhóm Uyên:
+- Nội dung: SEO, có tiêu chí đánh giá, có form để báo cáo công việc
+- Kết xuất:
++ Chưa có phân trang
+- Điều hướng:
+- Hỗ trợ tương tác:
+

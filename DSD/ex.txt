@@ -1,0 +1,19 @@
+1. Nhìn giao diện xác định công việc của mình
+2. Xác định các dịnh vụ có liên quan
+3. Review các API đưa ra đã đủ yêu cầu của mình hay chưa
+- Chưa: + bạn cung cấp nền tảng, cần viết theo cách chúng ta muốn
+	+ Chức cung cấp như mình mong muốn: yêu cầu viết
+
+(*) Công việc tuần tới:
+- Hoàn thiện các mockup
+- Hoàn thiện danh sách API dự kiến cung cấp
+- Xác định rõ mối quan hệ, use dv nào, provice cho dv nào
+	- Deadline: 23h59ph t4 tuần sau
+	- t3 - t5: trao đổi với các bạn có liên quan
+
+(*) Các câu hỏi:
+- Viết lại cho đạt yêu cầu:
++ các thông tin rõ ràng về các công nghệ mình sử dụng:
+	- bầu cử ntn
+	- tương tranh ntn
+	- hỗ trợ ntn

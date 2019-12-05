@@ -1,0 +1,65 @@
+(*) DUNG LỖI
+- Sai lệch so vs hành vi mong muốn hệ thống vẫn hoạt động
+- Lỗi: mạng, phần cứng, PM, do ng dùng
+- Các hình thức dung lỗi:
+- Câu hỏi: chỉ ra trong hệ thống mà ng dùng yêu cầu dung lỗi và cách giải quyết
+
+ (-) Phân loại
+	- Theo tần xuất
+		+ Xuất hiện 1 lần rồi thôi
+		+ Xuất hiện rồi biến mất, rồi lại xuất hiện
+		+ xuất hiện và tồn tại cho đến khi được sửa chữa
+	- Theo kết quả đầu ra:
+		+ trả về kq lỗi và ngừng hoạt động
+		+ hoạt động nhưng trả kq sai: khó phát hiện hơn
+===============================================================================
+ ===[Câu hỏi]===: Liệt kê ít nhất 2 lỗi theo các phân loại và cách để dung lỗi
+===============================================================================
+
+- Dung lỗi khi đông bộ !== ko đồng bộ:
+	- Đồng bộ: khắc phục bằng cơ chế timeout
+	- Không đồng bộ: 
+		+ fail-stop: try send request
+		+ hđ nh trả kq sai: cần có last update on, last update on phải sau tg gửi req, nếu trc thì phải chờ và gửi lại
+=> Làm đi làm lại nhiều lần dẫn đến: (áp dụng tính dư thừa để dung lỗi)
+	+ dư thừa thông tin
+	+ dư thừa thời gian: gọi đi gọi lại các req cho đến lúc timeout
+	+ dư thừa về vật lý: tạo bản sao trên nhiều bộ máy khác nhau
+=> Dung lỗi ntn để mức tốn kém là chấp nhận được?
+	+ Chịu đc k lỗi theo kieur slient fault: cần k+1 thành phần
+	+ byzantine fault: cần 2k+1 thành phần
+================================================================================================
+ ===[Câu hỏi]===: 1.Cung cấp APIs, sd API, nếu gọi đến mà ko đáp ứng thì xử lý như thế nào?
+		  2. Có 22 thành phần, kiến trúc phải thay đổi như thế nào để có thể dung lỗi?
+================================================================================================
+Cơ chế:
+- Primary backup: 
+	+ htg hđ trên 1 server, khi server die thì ms inable server backup
+	+ cơ chế pushop: backup gửi thông điệp xđ xem server còn sống ko
+UD: 
+ND: ko hiệu quả vs baretine
+nếu ko có quy ước mà đợi bên kia xác nhận thì có thể đợi vô hạn
+(*) Thỏa thuận trc trong hệ thống mắc lỗi: có cam kết
+===================================================================================
+Câu hỏi: Cam kết trong hệ thống để dung lỗi giữa các thành phần khác nhau là gì?
+===================================================================================
+(*) Thỏa thuận trong hệ thống mắc lỗi:
+
+
+=> Cần có biên pháp dung lỗi trong trường hợp cam kết rồi nhưng lại ko làm đúng cam kết?
+Bài toán: gs có n tướng, m tướng phản bội, thì cần lz?
+	- Nếu có m ng phản bộ thì cần có ít nhất 2m+1 ng trung thành	=> rất tốn kém, cần chủ động, cần có thỏa thuận để phân điịnh quyền lợi và trách nhiệm của các bên. Nhưng làm thế nào để đảm báo trách nhiệm của mình là do mình
+	- Lỗi slint fault: luôn luôn nghi ngờ, luôn cần ĐB dữ liệu là dữ liệu mới nhất
+
+
+(*) AN TOÀN AN NINH:
+- Một máy tính có 3 khả năng: xử lý, lưu trữ, giao tiếp
+- Muốn đảm bảo an toàn: có giải pháp cho 3 khả năng:
+	+ Lưu trữ: kiểm tra tính toàn vẹn, mã hóa
+	+ xử lý: xem DL có sẵn sàng, có toàn vẹn hay ko? có phải là DL ms nhất ko
+	+ trao đổi: DL ko ai nhúng tay, DL tù đúng ng yêu cầu, DL đúng ng có quyền truy cập
+==========================================================================================================
+Câu hỏi: Security có API đã có API đảm bảo phân quyên, xác thực hay chưa
+1. Hoàn thiện chương trình
+2. Xây dựng các kịch bản thử hiện: chứng minh APIS đã tồn tạ, ng dùng có thể truy cập thông qua giao diện
+==========================================================================================================

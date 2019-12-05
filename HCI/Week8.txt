@@ -1,0 +1,64 @@
+CÁC NGUYÊN TẮC THIẾT KẾ
+
+(*) Nguyên tắc Normal
+- Con người cần tiếp nhận thông tin phản hồi từ nhiều kênh:
++ Tính trực quan: chức năng tồn tại thông qua giao diện
++ Tính phản hồi: hệ thống cho ng dùng biết đã làm xong 1 việc
++ Tính ràng buộc: Tại sao ko đc làm 1 việc?
+	- vd: ràng buộc vật lý, ràng buộc logic
+	...
++ Tính ánh xạ: trong cs thật, làm theo 1 trình tự ntn thì khi tương tác cx làm theo 1 trình tự như thế
++ Tính nhất quán: hạn chế việc luôn phải học cách tiếp cận mới cho 01 việc mà ta đã biết
+	không nhất quán => học lại
+	lý do: tương tác theo thói quen
++ Tính affodance: nếu dùng quen thì ko sao, nếu ko dùng quen sẽ có vấn đề
+	vd: chuột máy tính: hạn chế việc đẩy sang trái/ phải mà chỉ cho phép ấn xuống
++ mental/ conceptual model: tôi nghĩ nó hđ theo kiểu này, tt nó có hđ như thế ko
+	bắt chấp nhận cách khác => ko chấp nhận || cần tg thích nghi
+
+=> THÁCH THỨC: độc đáo, sáng tạo >< ít động não, ít động chân tay
+
+(*) VÍ DỤ:
+- Bảng điều khiển thang máy:
+- Good Mapping - bad mapping
+
+(*) Shneiderman:
+- Tính nhất quán:
+	+ màu sắc, font chữ, phím tắt,...
+- ShortCuts ~ mental model
+- Feedback
+- Design 
+
+...
+
+(*) Thiết kế:
+- Thiết kế nội dung:
+	+ thông điệp hệ thống gửi cho ng dùng, phần tử ng dùng dùng tg tác vs htg, vd thông báo lỗi
+- Thiết kế kết xuất nội dung: rendering
+	+ cách thể hiện cái nd đó: vd popup, âm thanh thông báo lỗi
+	+ chức năng đăng nhập: có nhiều hơn 1 cách để đăng nhập => các dạng rendering khác nhau của thông tin vào là thông tin ng dùng
+- Thiết kế điều hướng: 2 dạng
+	+ điều hướng giữa các màn hình khác nhau
+	+ trong 1 màn hình: nhấn tab thì nhảy đến thông tin gì...
+=> lq đến luồng duyệt tin
+- Hỗ trợ tương tác: 2 dạng
+	+ trợ giúp: ng dùng làm theo hướng dẫn của hệ thống, vd: video hướng dẫn
+	+ chỉ dẫn: ng dùng chủ động tìm kiếm thông tin và hệ thống trả ra thông tin
+		vd: gõ vào ô help => thông tin => cân nhắc sd thông tin để đạt đc mục tiêu
+
+CẦN XÁC ĐỊNH: Content là gì
+Note: một màn hình chỉ nên mang 01 thông điệp
+nếu nhiều hơn => đòi hỏi nỗ lực lớn từ ng dùng, càng đơn giản càng đc ưu chuộng
+
+(*) Cách tiếp cận dropdown: bố cục trc => nd sau
+=> bắt đầu bằng điều hướng trc
+=> xđ bố cục của màn hình: 
+	+ tương tác đầu vào, đầu ra
+	+ định nghĩa các phần từ giao diện: có bn phần, đặt ở đâu, kích thước bao nhiêu
+=> Check xem với thứ tự, bố cục đó đã đủ để đi đến mục tiêu cuối cùng chưa
+
+- NOTE: 01 màn hình chỉ nên đưa ra 01 thông điệp
+	càng đơn giản càng tốt: sd 2 - 4 màu
+	quy tắc nhất định mà tất cả cần tuân thủ là gì?
+
+BÀI TẬP: 4 bài: mở liên tục vào các tuần kế tiếp, cần lưu ý

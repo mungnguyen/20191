@@ -1,0 +1,23 @@
+(*) V-model
+- Unit: thực hiện bởi developer
+- Intergation: test sự liên kết giữa các unit, thực hiện bởi dev
+- system: kiểm thử khi hệ thống chạy trong môi trường PM, tester thực hiện
+- operation: KH test, kiểm thử để xem có thể chấp nhận PM đó trong thực tế ko.
+
+(*) Agile:
+- Xây dựng TC trước khi code => automation test
+- Code để vượt qua hết các TC
+
+(*) Black box, white box:
+- Thiết kế TC
+- 
+
+(*) 2 môn thi Toán Lý:
+- DDỗ nếu 2 môn >= 70 - 100 hoặc trung bình >= 80 - 100
+
+(*) Phương pháp xd TC:
+- Phân vùng tương đương: phân chia DL thành các vùng tương đương với nhau, lấy giá trị đại điện để test
+- Bảng quyết định: 
+- Kiểm thử giá trị biên: 
+
+(*) BT: Thiết kế TC, dùng Junit viết TC

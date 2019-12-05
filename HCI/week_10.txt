@@ -1,0 +1,16 @@
+(*) DG tính dùng đc:
+- DG hình thành
+- DG sơ kết
+- DG tổng kết
+
+(*) Câu hỏi cho kt summative evaluation:
+- Cần đánh giá trên cách nhìn của nhà phát triển, đánh giá tính dùng được của sản phẩm mà mình xây dựng, trong đó sp chưa xong nhưng giao diện đã xong rồi
+	+ Nhiệm vụ được biểu diễn ntn?
+	+ Người dùng biển diễn ntn?
+	+ Ngữ cảnh biểu diễn ntn?
+Trên giao diện, 3 yếu tố trên được thể hiện ntn nào?
+Mô tả:
+- Tên UC
+- Mục đích của việc đánh giá là thử cái gì
+- Xác định nhiệm vụ, người dùng ngữ cảnh đc biểu diễn ntn thì cần quan tâm đến những vđề gì?
+
