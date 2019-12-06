@@ -1,6 +1,6 @@
 const db = require("../models");
 
-exports.login = async function (req, res, next) {
+exports.login = async function (req, res) {
     console.log("Log-In");
     try {
         const user = await db.user.findOne({
@@ -10,9 +10,9 @@ exports.login = async function (req, res, next) {
         })
 
         if (!user) {
-            res.status(422).json(new Error("NO-USER"))
+            res.status(422).json({ error: "NO-USER" })
         } else if (user.password !== req.body.password) {
-            res.status(422).json(new Error("PASSWORD_ERROR"))
+            res.status(422).json({ error: "PASSWORD_ERROR" })
         } else res.json(user)
     } catch (err) {
         console.log("login", err)

@@ -4,24 +4,18 @@
       <v-text-field v-model="user.email" label="Email"></v-text-field>
 
       <v-text-field v-model="user.password" label="Password"></v-text-field>
-
-      <center>
-        <v-btn type="primary" rounded>Đăng nhập</v-btn>
-      </center>
     </v-form>
+
+    <center>
+      <v-btn type="primary" rounded @click="handleLogin">Đăng nhập</v-btn>
+    </center>
   </v-card>
 </template>
 
 <script>
-import Logo from "~/components/Logo.vue";
-import VuetifyLogo from "~/components/VuetifyLogo.vue";
+import { mapActions } from "vuex";
 
 export default {
-  components: {
-    Logo,
-    VuetifyLogo
-  },
-
   data() {
     return {
       valid: true,
@@ -30,6 +24,20 @@ export default {
         password: ""
       }
     };
+  },
+
+  methods: {
+    ...mapActions("login", ["login"]),
+    async handleLogin() {
+      const { isSuccess, user } = await this.login(this.user);
+      if (isSuccess) {
+        if (process.browser) {
+          localStorage.setItem("userId", user.id);
+          localStorage.setItem("name", user.name);
+        }
+        this.$router.push("/chat");
+      }
+    }
   }
 };
 </script>
