@@ -1,0 +1,27 @@
+- Tp đc sd ở đâu
+- Khả năng linh hoạt show giao diện
+- Khả năng tái sd các phần chúng ta đã cài đặt
+
+KỊCH BẢN:
+
+1. Giám đốc muốn xem 1 dashboard thể hiện toàn bộ khía cạnh hoạt động tổ chức của công ty:
+- Cách 1: App của nhóm làm giao diện dành cho giám đốc
+- Cách 2: Xây dựng thành nhiều phần nhỏ
+
+2. Nhân viên thuộc 1 phòng bất kì, khi đc phân công thực hiện một nhiệm vụ thì họ có thể quan sát được xem vai trò hoặc nhiệm vụ của họ đang nằm ở đâu trong cả quy trình thực hiện nhiệm vụ đấy. Họ có thể xem đc các thông tin dạng bảng thi đua vs những ng cùng thực hiện quy trình đoa hoặc những người ở cùng vị trí vs họ nhưng làm những công việc khác.
+
+3. Trưởng phòng cần theo dõi và đánh giá kết quả thực hiện của nhân viên theo quy trình, đồng thời mang kết quả đó tổng hợp lại gửi cho giám đốc. Kết quả được công khai cho nhân viên, có cơ chế để sử dụng log kiểm tra lại toàn bộ thông tin cho việc đánh giá cũng như lịch sử thay đổi kết quả đánh giá (nếu có).
+
+4. Yếu tố phân quyền trao đổi dữ liệu. Gắn liền với 4 yếu tố:
+- Được phép thay đổi: tùy vào vị trí công việc, thời điểm xác định
+
+5. Toàn bộ yếu tố liên quan đến các kĩ thuật giải quyết các vấn đề của hệ phân tán:
+- Dung lỗi
+- Sao lưu
+- Tương tranh
+- Bảo mật
+- Đánh giá hiệu năng như thế nào
+
+RÕ RÀNG:
+- APIs cần có ng gọi đến, thể hiện thông qua giao diện: nếu ko đc sd bởi nhóm làm giao diện thì mình phải cung cấp đc giao diện
+- Mỗi nhóm đều phải thể hiện sự lq đến cả 5 kịch bản

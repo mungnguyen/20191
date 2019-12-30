@@ -11,7 +11,7 @@ CÁC NGUYÊN TẮC THIẾT KẾ
 + Tính nhất quán: hạn chế việc luôn phải học cách tiếp cận mới cho 01 việc mà ta đã biết
 	không nhất quán => học lại
 	lý do: tương tác theo thói quen
-+ Tính affodance: nếu dùng quen thì ko sao, nếu ko dùng quen sẽ có vấn đề
++ Tính affordance: nếu dùng quen thì ko sao, nếu ko dùng quen sẽ có vấn đề
 	vd: chuột máy tính: hạn chế việc đẩy sang trái/ phải mà chỉ cho phép ấn xuống
 + mental/ conceptual model: tôi nghĩ nó hđ theo kiểu này, tt nó có hđ như thế ko
 	bắt chấp nhận cách khác => ko chấp nhận || cần tg thích nghi
